@@ -1,0 +1,15 @@
+{
+    "name": "groutch/php-templating",
+    "description": "templating exo",
+    "require": {
+        "fzaninotto/faker": "^1.8",
+        "twig/twig": "^2.5",
+        "mbezhanov/faker-provider-collection": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Groutch",
+            "email": "hurizen1@hotmail.com"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col m9">
+            <h1 class="center-align">{{companyName}}</h1>
+            <h2 class="center-align">{{catchPhrase}}</h2>
+            <div class="container">
+                <p class="flow-text">Chez {{companyName}}, nous créons de {{productAdjective}} {{productName}} à partir de {{productMaterial}}</p>
+                <p class="flow-text">En savoir plus :<a href={{url}} target="_blank">{{url}}</a></p>
+                <div class="row">
+                    <div class="col m6 offset-m3">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src={{imgProd}}>
+                                <span class="card-title">{{productName}}</span>
+                            </div>
+                            <div class="card-content">
+                                <p>Matériau: {{productMaterial}}</p>
+                                <p>Couleur: {{color}}</p>
+                                <h3>Prix: {{prix}} € Seulement!</h3>
+                            </div>
+                            <div class="card-action">
+                                <button class="btn waves-effect waves-light" type="submit">Prends mon argent!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col m3">
+            <img class="circle responsive-img" src={{imgCust}}>
+            <h4 class="center-align">{{name}}</h4>
+            <h4 class="center-align">{{job}}</h4>
+            <div class="container">
+                <h4>Contact Info</h4>
+                <h6>{{mail}} <br> {{phone}}</h6>
+                <h6>{{numRue}} {{nomRue}}</h6>
+                <h6>{{codePostal}} {{ville}}</h6>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+
+</html>
